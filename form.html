@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<form action="###">
+		<fieldset>
+			<legend>dati anagrafici</legend>
+			<label for="mail">Email</label>
+			<input type="email" name="mail" id="mail">
+			<label for="pass">password</label>
+			<input type="password" name="password" id="pass">
+			<label for="name">nome e cognome</label>
+			<input type="text" name="fullname" id="name">
+			<label for="Data">data di nascita</label>
+			<input type="date" name="born" id="Data">
+			<label for="cell">numero di Telefono</label>
+			<input type="number" name="numero-telefono" id="cell">
+		</fieldset>
+		<fieldset>
+			<legend>abbonamenti</legend>
+			<label for="abbonamenti">seleziona abbonamento</label>
+			<select name="piano" id="abbonamenti">
+				<option value=" ">Free</option>
+				<option value="4.99">4,99</option>
+				<option value="7.99">7,99</option>
+				<option value="9.99">9,99</option>
+			</select>
+			<input type="checkbox" name="piano" id="abbonamenti">
+			<hr>
+			<label for="pro">vantaggi PRO</label>
+			<input type="checkbox" id="pro" name="PRO">
+		</fieldset>
+		<fieldset>
+			<legend>inserimento dati Carta di credito</legend>
+			<label for="nc">Numero Carta</label>
+		<input type="text" id="nc" name="numero-carta" maxlength="16">
+		<label for="cvc">CVC</label>
+		<input type="text" id="cvc" name="cvc" maxlength="3" >
+		<label for="scad">Scadenza</label>
+		<input type="date" id="scad" name="scadenza">
+		<label for="address">Indirizzo di fatturazione</label>
+		<input type="text" id="address" name="indirizzo-fatturazione">
+		</fieldset>
+		<button type="submit">INVIA DATI</button>
+	</form>
+
+</body>
+
+</html>
