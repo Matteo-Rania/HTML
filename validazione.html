@@ -45,9 +45,9 @@
 	</div>
 	<div>
 		<label for="form-cc">Numero Carta</label>
-		<input id="form-cc" name="cc" required type="text" minlength="16" maxlength=" 19"placeholder="0000-0000-0000-0000">
+		<input id="form-cc" name="cc" required type="text" pattern="[0-9]{16}">
 		<label for="form-cvc">CVC</label>
-		<input id="form-cvc" name="cvc" required type="text" maxlength="3" minlenght="3">
+		<input id="form-cvc" name="cvc" required type="text" pattern="[0-9]{3}">
 		<label for="form-exp">Scadenza</label>
 		<input id="form-exp" name="exp" required type="date"/>
 		<label for="form-address">Indirizzo di fatturazione</label>
